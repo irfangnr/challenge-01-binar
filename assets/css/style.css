@@ -221,71 +221,24 @@
   }
   .img-user {
     float: none !important;
-    width: 100% !important;
-    opacity: 0.1;
+    width: 90% !important;
+    opacity: 0.09;
   }
   .list-service {
     float: none !important;
-    width: 100% !important;
+    width: 93% !important;
     text-align: justify;
     position: absolute !important;
     bottom: 0;
   }
-  .list-service .title-service {
-    padding-right: 40px;
-    text-align: center;
+  .our-service {
+    padding: 60px 0;
   }
-  .list-service .desc-service {
-    margin-right: 40px;
-    overflow: none;
+  .jumbotron {
+    background-color: #f1f3ff;
+    padding: 10rem 0 50px 0;
   }
-  .title-faq {
-    float: none !important;
-    width: 100% !important;
-    text-align: center;
-    margin-bottom: 4rem !important;
-  }
-  .w-end {
-    float: none !important;
-    width: 100% !important;
-  }
-}
-/* responsive tablet */
-@media (max-width: 1024) {
-  .container-car {
-    display: none;
-  }
-  .desc-hero {
-    width: 100%;
-    text-align: center;
-  }
-  .w-desc {
-    width: 100% !important;
-    text-align: center;
-  }
-  .w-desc p {
-    padding: 0 !important;
-  }
-  .img-user {
-    float: none !important;
-    width: 100% !important;
-    opacity: 0.1;
-  }
-  .list-service {
-    float: none !important;
-    width: 100% !important;
-    text-align: justify;
-    position: absolute !important;
-    bottom: 0;
-  }
-  .list-service .title-service {
-    padding-right: 40px;
-    text-align: center;
-  }
-  .list-service .desc-service {
-    margin-right: 40px;
-    overflow: none;
-  }
+
   .title-faq {
     float: none !important;
     width: 100% !important;
