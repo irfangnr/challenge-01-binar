@@ -30,35 +30,6 @@ class App {
   async load() {
     const cars = await Binar.listCars();
     Car.init(cars);
-
-    this.loadButton.addEventListener('click', async () => {
-      let SelectDrive =
-        this.selectDrive.options[this.selectDrive.selectedIndex].value;
-      let date = this.date.value;
-      let time = this.time.options[this.time.selectedIndex].value;
-      let orang = this.orang.value;
-
-      this.clear();
-
-      const cars = await Binar.listCars((car) => {
-        let result = true;
-
-        let dateTime = date + 'T' + time;
-        if (!isNaN(Date.parse(dateTime)) && !isNaN(parseInt(orang))) {
-          result =
-            car.availableAt.getTime() >= Date.parse(dateTime) &&
-            car.capacity === parseInt(orang);
-        } else if (!isNaN(Date.parse(dateTime))) {
-          result = car.availableAt.getTime() >= Date.parse(dateTime);
-        } else if (!isNaN(parseInt(orang))) {
-          result = car.capacity === parseInt(orang);
-        }
-
-        return result;
-      });
-
-      Car.init(cars);
-    });
   }
 
   clear = () => {
