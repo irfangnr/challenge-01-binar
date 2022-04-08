@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Binar Rental Car</title>
+  </head>
+  <body>
+    <!-- navigasi -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Our Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Why Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Testimonial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FAQ</a>
+            </li>
+            <li class="nav-tegistrasi">
+              <a href="#" class="btn btn-g-green">Registrasi</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end navigasi -->
+
+    <!-- jumbroton -->
+    <section class="jumbotron position-relative">
+      <div class="container">
+        <div class="desc-hero w-desc">
+          <p class="fw-bold pe-5 title-jumb">
+            Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)
+          </p>
+          <p class="pe-5 desc-jumb">
+            Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas
+            terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu
+            untuk sewa mobil selama 24 jam.
+          </p>
+          <a href="/cariMobil" class="btn btn-g-green">Mulai Sewa Mobil</a>
+        </div>
+      </div>
+      <div class="container-car position-absolute bottom-0 end-0">
+        <div class="square-car"></div>
+        <img
+          class="car position-relative bottom-0 end-0"
+          src="images/car.png"
+          alt="car"
+          width="100%"
+        />
+      </div>
+    </section>
+    <!-- end jumbroton -->
+
+    <!-- cari mobil -->
+    <section>
+      <div class="container rounded">
+        <div class="carimobil-form row g-3 d-flex justify-content-center p-3">
+          <div class="col-2">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Tipe Driver</label
+            >
+            <select
+              class="form-select"
+              aria-label="Default select example"
+              id="selectDrive"
+            >
+              <option selected>Pilih Tipe Driver</option>
+              <option value="1">Dengan Sopir</option>
+              <option value="2">Tanpa Sopir</option>
+            </select>
+          </div>
+          <div class="col-auto">
+            <label for="driver" class="form-label">Tanggal</label>
+            <input type="date" class="form-control" id="tanggal" />
+          </div>
+          <div class="col-3">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Tipe Driver</label
+            >
+            <select
+              class="form-select"
+              aria-label="Default select example"
+              id="selectWaktu"
+            >
+              <option selected>Pilih Waktu</option>
+              <option value="00:00">00:00 WIB</option>
+              <option value="01:00">01:00 WIB</option>
+              <option value="02:00">02:00 WIB</option>
+              <option value="03:00">03:00 WIB</option>
+              <option value="04:00">04:00 WIB</option>
+              <option value="05:00">05:00 WIB</option>
+              <option value="06:00">06:00 WIB</option>
+              <option value="07:00">07:00 WIB</option>
+              <option value="08:00">08:00 WIB</option>
+              <option value="09:00">09:00 WIB</option>
+              <option value="10:00">10:00 WIB</option>
+              <option value="11:00">11:00 WIB</option>
+              <option value="12:00">12:00 WIB</option>
+            </select>
+          </div>
+          <div class="col-auto">
+            <label for="driver" class="form-label">Jumlah Orang</label>
+            <input type="number" class="form-control" id="orang" />
+          </div>
+          <div class="col-auto pt-4">
+            <button class="btn btn-g-green mb-3" id="btn-car">
+              Cari Mobil
+            </button>
+          </div>
+        </div>
+        <div
+          id="cars-container"
+          class="p-4 d-flex flex-wrap justify-content-center"
+        ></div>
+      </div>
+    </section>
+    <!-- end cari mobil -->
+
+    <!-- Footer -->
+    <footer class="text-black pt-5 mt-5">
+      <div class="container p-4">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+            <p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
+            <p>binarcarrental@gmail.com</p>
+            <p>081-233-334-808</p>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0 fw-bold">
+            <p>Our Services</p>
+            <p>Why Us</p>
+            <p>Testimonial</p>
+            <p>FAQ</p>
+          </div>
+          <div class="rate col-lg-3 col-md-6 mb-4 mb-md-0">
+            <p class="text-black">Connect with Us</p>
+            <span
+              ><a href="#"><img src="icon/icon_facebook.png" alt="fb" /></a
+            ></span>
+            <span
+              ><a href="#"> <img src="icon/icon_instagram.png" alt="ig" /> </a
+            ></span>
+            <span
+              ><a href="#"><img src="icon/icon_twitter.png" alt="tw" /></a
+            ></span>
+            <span
+              ><a href="#"><img src="icon/icon_mail.png" alt="mail" /></a
+            ></span>
+            <span
+              ><a href="#"><img src="icon/icon_twitch.png" alt="twich" /></a
+            ></span>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <ul class="list-unstyled">
+              <li>
+                <p class="text-black">Copyright Binar 2022</p>
+              </li>
+              <li style="width: 100px; height: 34px; background-color: #0d28a6">
+                <a href="#" class="text-black"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end Footer -->
+
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./scripts/binar.js"></script>
+    <script type="text/javascript" src="./scripts/app.example.js"></script>
+    <script type="text/javascript" src="./scripts/car.example.js"></script>
+    <script type="text/javascript" src="./scripts/main.example.js"></script>
+  </body>
+</html>

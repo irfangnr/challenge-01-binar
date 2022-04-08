@@ -154,6 +154,16 @@
   margin-right: 10px;
 }
 
+/* cari mobil */
+
+.carimobil-form {
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  margin-top: -50px;
+  position: relative;
+  z-index: 999;
+}
+
 .owl-carousel .owl-nav button.owl-next {
   background-color: #86d488 !important;
   font-weight: 600;
